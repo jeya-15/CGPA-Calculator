@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>GPA Calculator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+
+<ul>
+	<li><a href="file:///E:/Projects-html&css/Practice/SImple_portfolio/index.html#about">HOME</a></li>
+</ul></header>
+	<h1>GPA Calculator</h1>
+	<div id="cent">
+		<div class="bor">
+			<div id="inputContainer">
+				<div class="box">
+						<div class="input">
+							<label for="grade1">Enter the Grade:</label>
+							<select name="grade1" id="grade1">
+								<option value="5">C</option>
+								<option value="6">B</option>
+								<option value="7">B+</option>
+								<option value="8">A</option>
+								<option value="9">A+</option>
+								<option value="10">O</option>
+							</select>
+						</div>
+						<div class="input1">
+							<label for="credit1">Enter the Credit of the course</label>
+							<select name="credit1" id="credit1">
+								<option value="4">4</option>
+								<option value="3">3</option>
+								<option value="3">2</option>
+								<option value="3">1</option>
+							</select>
+						</div>
+				</div>
+			</div>
+			<div class="submit">
+			<button class="h1" onclick="addsub()">Add Course</button>
+			<button class="h2" onclick="inputContainer.lastChild.remove()">Remove Course</button>
+			<button class="h3" onclick="calculate()">Calculate GPA</button>
+			</div>
+			<p id="result">Calculating</p>
+		</div>
+	</div>
+
+
+	<script src="script.js"></script>
+</body>
+
+</html>
